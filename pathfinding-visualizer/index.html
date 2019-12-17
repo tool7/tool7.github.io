@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathfinding Visualizer</title>
+
+  <link rel="stylesheet" href="./bundle.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h4>Pathfinding Visualizer</h4>
+  </nav>
+
+  <div id="app-container">
+    <div id="controls-container">
+      <button id="visualize-toggle-btn" class="start">Visualize</button>
+
+      <drop-down
+        id="algorithm-selector"
+        selected-value="dijkstra"
+        width="26rem"
+        bg-color="#e68a00"
+        txt-color="#ffffff"
+        item-hover-bg-color="#cc6600">
+        <div class="menu-option" data-value="bfs">Breadth-first search</div>
+        <div class="menu-option" data-value="gbfs">Greedy best-first search</div>
+        <div class="menu-option" data-value="dijkstra">Dijkstra's algorithm</div>
+        <div class="menu-option" data-value="astar">A* search</div>
+      </drop-down>
+
+      <drop-down
+        id="simulation-delay-selector"
+        selected-value="15"
+        width="20rem"
+        bg-color="#7e49c9"
+        txt-color="#ffffff"
+        item-hover-bg-color="#6933b5">
+        <div class="menu-option" data-value="5">Very fast</div>
+        <div class="menu-option" data-value="15">Fast</div>
+        <div class="menu-option" data-value="50">Medium</div>
+        <div class="menu-option" data-value="100">Slow</div>
+        <div class="menu-option" data-value="200">Very slow</div>
+      </drop-down>
+
+      <button id="grid-type-toggle-btn">Switch to <b>hexagon</b> grid</button>
+
+      <button id="clear-walls-btn">Clear walls</button>
+
+      <span>Hold 'Shift' to add weighted tiles</span>
+    </div>
+
+    <div id="grid-container">
+      <table id="square-grid" class="active"></table>
+      <svg id="hexagon-grid" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>Implemented in Typescript | &copy; 2019 by Marko Roje</span>
+  </footer>
+
+  <script src="./bundle.js"></script>
+</body>
+</html>
