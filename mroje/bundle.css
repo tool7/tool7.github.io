@@ -690,6 +690,13 @@ a.pswp__share--download:hover {
 .italic-text {
   font-style: italic; }
 
+a.bold-link {
+  font-weight: bold;
+  color: inherit; }
+  a.bold-link:hover {
+    color: #555555;
+    text-decoration: underline; }
+
 *,
 *::after,
 *::before {
@@ -834,7 +841,7 @@ h2 {
     @media (max-width: 599px) {
       .project-card__title {
         top: 70%;
-        font-size: 1.6rem; } }
+        font-size: 1.4rem; } }
   .project-card__content {
     position: absolute;
     left: 50%;
@@ -929,13 +936,6 @@ h2 {
         grid-template-columns: repeat(auto-fill, 12rem);
         justify-content: center; } }
 
-.section-hobbies a {
-  font-weight: bold;
-  color: inherit; }
-  .section-hobbies a:hover {
-    color: #555555;
-    text-decoration: underline; }
-
 #cv-page {
   display: flex;
   justify-content: center;
@@ -967,13 +967,6 @@ h2 {
   display: block;
   text-align: center;
   font-size: 14px; }
-
-.unity-ship-controller-page__section a {
-  font-weight: bold;
-  color: inherit; }
-  .unity-ship-controller-page__section a:hover {
-    color: #555555;
-    text-decoration: underline; }
 
 .csharp-code {
   font-size: 14px !important;
