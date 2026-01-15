@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Marko Roje</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Vollkorn|Inconsolata&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="bundle.css">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn|Inconsolata&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="bundle.css" />
   </head>
   <body>
-    
     <nav class="navbar">
-      <span class="navbar__link" data-name="/about-me">About me</span>
-      <span class="navbar__link-divider"></span>
-      <span class="navbar__link" data-name="/cv">Curriculum Vitae</span>
+      <div class="navbar__links">
+        <span class="navbar__link" data-name="/about-me">About me</span>
+        <span class="navbar__link-divider"></span>
+        <span class="navbar__link" data-name="/cv">Curriculum Vitae</span>
+      </div>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌑</button>
     </nav>
 
     <div id="content"></div>
 
     <footer class="footer">
       <span>Built using vanilla JS, SASS for styling and Webpack for bundling it all up.</span>
-      <br/>
+      <br />
       <span>&copy; 2019 by Marko Roje. All rights reserved.</span>
     </footer>
 
